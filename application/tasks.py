@@ -1,4 +1,3 @@
-from domain.services import map_to_hired_employees
 from adapters.db.hired_employee_repository import HiredEmployeeRepository
 
 async def process_hired_employees_batch(batch_rows: list) -> dict:

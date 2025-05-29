@@ -14,6 +14,10 @@ app = FastAPI(
     version="1.0"
 )
 
+@app.get("/", tags=["Health"])
+async def health_check():
+    return {"status": "ok", "message": "HR Processing API is running"}
+
 app.include_router(departments.router)
 app.include_router(jobs.router)
 app.include_router(hired_employees.router)

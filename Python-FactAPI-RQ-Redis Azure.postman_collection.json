@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "f9d6a3b5-d6b6-41b9-82b7-05724dd91cd1",
+		"name": "Python-FactAPI-RQ-Redis Azure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14942290",
+		"_collection_link": "https://restless-capsule-677961.postman.co/workspace/Globant-Challenge~a5f8bffc-d152-4968-a509-bddd26900ffc/collection/14942290-f9d6a3b5-d6b6-41b9-82b7-05724dd91cd1?action=share&source=collection_link&creator=14942290"
+	},
+	"item": [
+		{
+			"name": "Upload departments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://hr-api-app.politefield-cb6d14be.westus.azurecontainerapps.io/process/departments",
+					"protocol": "https",
+					"host": [
+						"hr-api-app",
+						"politefield-cb6d14be",
+						"westus",
+						"azurecontainerapps",
+						"io"
+					],
+					"path": [
+						"process",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Jobs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://hr-api-app.politefield-cb6d14be.westus.azurecontainerapps.io/process/jobs",
+					"protocol": "https",
+					"host": [
+						"hr-api-app",
+						"politefield-cb6d14be",
+						"westus",
+						"azurecontainerapps",
+						"io"
+					],
+					"path": [
+						"process",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload hired employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://hr-api-app.politefield-cb6d14be.westus.azurecontainerapps.io/process/hired_employees?start=0&limit=1000",
+					"protocol": "https",
+					"host": [
+						"hr-api-app",
+						"politefield-cb6d14be",
+						"westus",
+						"azurecontainerapps",
+						"io"
+					],
+					"path": [
+						"process",
+						"hired_employees"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload hired employees V2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://hr-api-app.politefield-cb6d14be.westus.azurecontainerapps.io/process/hired_employees/v2?start=0&limit=1000",
+					"protocol": "https",
+					"host": [
+						"hr-api-app",
+						"politefield-cb6d14be",
+						"westus",
+						"azurecontainerapps",
+						"io"
+					],
+					"path": [
+						"process",
+						"hired_employees",
+						"v2"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tasks Status and Response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hr-api-app.politefield-cb6d14be.westus.azurecontainerapps.io/tasks/518a6ddf-efbe-4c5f-b763-acb06d371c98/status",
+					"protocol": "https",
+					"host": [
+						"hr-api-app",
+						"politefield-cb6d14be",
+						"westus",
+						"azurecontainerapps",
+						"io"
+					],
+					"path": [
+						"tasks",
+						"518a6ddf-efbe-4c5f-b763-acb06d371c98",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report hired per quarter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hr-api-app.politefield-cb6d14be.westus.azurecontainerapps.io/report/hired-per-quarter",
+					"protocol": "https",
+					"host": [
+						"hr-api-app",
+						"politefield-cb6d14be",
+						"westus",
+						"azurecontainerapps",
+						"io"
+					],
+					"path": [
+						"report",
+						"hired-per-quarter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report above average hiring",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hr-api-app.politefield-cb6d14be.westus.azurecontainerapps.io/report/above-average-hiring",
+					"protocol": "https",
+					"host": [
+						"hr-api-app",
+						"politefield-cb6d14be",
+						"westus",
+						"azurecontainerapps",
+						"io"
+					],
+					"path": [
+						"report",
+						"above-average-hiring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health /",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hr-api-app.politefield-cb6d14be.westus.azurecontainerapps.io/",
+					"protocol": "https",
+					"host": [
+						"hr-api-app",
+						"politefield-cb6d14be",
+						"westus",
+						"azurecontainerapps",
+						"io"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "c4e9829a-f068-48ad-8fb5-dac9c5040632",
+		"name": "Python-FactAPI-RQ-Redis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14942290",
+		"_collection_link": "https://restless-capsule-677961.postman.co/workspace/Globant-Challenge~a5f8bffc-d152-4968-a509-bddd26900ffc/collection/14942290-c4e9829a-f068-48ad-8fb5-dac9c5040632?action=share&source=collection_link&creator=14942290"
+	},
+	"item": [
+		{
+			"name": "Upload departments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:80/process/departments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"process",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Jobs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:80/process/jobs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"process",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload hired employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/process/hired_employees?start=0&limit=1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"process",
+						"hired_employees"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload hired employees V2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/process/hired_employees/v2?start=0&limit=1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"process",
+						"hired_employees",
+						"v2"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tasks Status and Response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/tasks/505090c8-57d4-4a58-8b3d-f2eb2638f480/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"tasks",
+						"505090c8-57d4-4a58-8b3d-f2eb2638f480",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report hired per quarter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/report/hired-per-quarter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"report",
+						"hired-per-quarter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report above average hiring",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/report/above-average-hiring",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"report",
+						"above-average-hiring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health /",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:80/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

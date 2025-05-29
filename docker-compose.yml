@@ -4,7 +4,8 @@ services:
   app:
     build: .
     ports:
-      - "8000:8000"
+      - "80:80"
+
     environment:
       - AZURE_STORAGE_CONNECTION_STRING=${AZURE_STORAGE_CONNECTION_STRING}
       - AZURE_STORAGE_CONTAINER=${AZURE_STORAGE_CONTAINER}
